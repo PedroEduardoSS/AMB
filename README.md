@@ -1,5 +1,6 @@
 # AMB - Assistente Médica Belle
-Preditor de doenças com base em análises de dados fornecidos por um usuário
+Preditor de doenças com base em análises de dados fornecidos por um usuário.
+
 **Para ter acesso ao código, acesse a branch master**
 
 ## Resumo
