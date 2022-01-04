@@ -10,7 +10,7 @@ x = arquivo.drop('Doença/Sintomas', axis=1)  # variavel preditora
 x_treino = x[:15]
 y_treino = y[:15]
 
-"""Interação com o usuário (Sem Interface Gráfica)"""
+"""Interação com o usuário (Sem Interface Gráfica)
 l1 = list()
 l2 = list()
 s = ['Calafrios', 'Diarreia', 'Dor de cabeça', 'Dor Geral', 'Dor de garganta', 'Dor no tórax/peito', 'Dor nos Olhos',
@@ -20,7 +20,7 @@ print("Responda as perguntas a seguir como 0 para NÃO e 1 para SIM.")
 for sintom in s:
     l2.append(int(input(f"Teve {sintom}?")))
 
-l1.append(l2)
+l1.append(l2)"""
 
 """Criação do modelo para treinar o conteúdo do arquivo.CSV:"""
 modelo = ExtraTreesClassifier()
@@ -30,6 +30,4 @@ modelo.fit(x_treino, y_treino)
 Previsão dos parâmetros dados pelo usuário
 com base no modelo criado anteriormente 
 """
-previsao = modelo.predict(l1)
-if previsao == [['Rotavírus']]:
-    print('Rotavírus')
+previsao = modelo.predict()
